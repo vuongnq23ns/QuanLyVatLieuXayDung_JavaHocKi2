@@ -105,7 +105,7 @@ public class MainWindowView extends JFrame {
 	    welcome.setOpaque(true);
 	    welcome.setBackground(new Color(31,40,57,255));
 	    welcome.setForeground(new Color(160,75,96,255));
-	    welcome.setFont(new Font("Consolas", Font.BOLD, 28));
+	    welcome.setFont(new Font("Helvetica", Font.BOLD, 28));
 	    welcome.setBounds(0, 0, 1400, 100);
 	    welcome.setHorizontalAlignment(SwingConstants.CENTER);
 	    add(welcome);

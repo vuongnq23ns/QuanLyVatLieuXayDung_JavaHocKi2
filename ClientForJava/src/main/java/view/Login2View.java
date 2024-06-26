@@ -48,9 +48,9 @@ public class Login2View extends JFrame {
 		this.add(password);
 		this.add(login);
 		user.setBounds(65, 10, 100, 50);
-		user.setFont(new Font("Consolas", Font.PLAIN, 16));
+		user.setFont(new Font("Helvetica", Font.PLAIN, 16));
 		password.setBounds(54, 90, 80, 50);
-		password.setFont(new Font("Consolas", Font.PLAIN, 16));
+		password.setFont(new Font("Helvetica", Font.PLAIN, 16));
 		enterUser.setBounds(180, 10, 200, 50);
 		enterPassword.setBounds(180, 90, 200, 50);
 		login.setBounds(150, 170, 100, 50);

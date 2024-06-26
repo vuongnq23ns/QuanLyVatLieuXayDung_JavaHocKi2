@@ -85,17 +85,17 @@ public class MainWindowView extends JFrame {
 	        public Component getTableCellRendererComponent(JTable table, Object value,
 	            boolean isSelected, boolean hasFocus, int row, int column) {
 	            super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                setBorder(BorderFactory.createLineBorder(Color.gray, 1)); // Set border here
-                setHorizontalAlignment(SwingConstants.CENTER);  // Canh giữa dữ liệu trong ô
-	            setFont(new Font("Arial", Font.BOLD, 30));  // Larger, bold font
-	            setBackground(new Color(45, 45, 45));  // Matching the table's dark theme
-	            setForeground(new Color(254,247,96,255));  // Bright green text
+                setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+                setHorizontalAlignment(SwingConstants.CENTER);  
+	            setFont(new Font("Arial", Font.BOLD, 30));  
+	            setBackground(new Color(45, 45, 45));  
+	            setForeground(new Color(254,247,96,255));  
 	            return this;
 	        }
 	    });
-	    // Adjust header height
+	    // header 
 	    Dimension dimension = header.getPreferredSize();
-	    dimension.height = 60;  // Increased header height
+	    dimension.height = 60;  
 	    header.setPreferredSize(dimension);
 
 	    
@@ -107,54 +107,54 @@ public class MainWindowView extends JFrame {
 	    welcome.setOpaque(true);
 	    welcome.setBackground(new Color(31,40,57,255));
 	    welcome.setForeground(new Color(160,75,96,255));
-	    welcome.setFont(new Font("Consolas", Font.BOLD, 28));
+	    welcome.setFont(new Font("Helvetica", Font.BOLD, 28));
 	    welcome.setBounds(0, 0, 1400, 100);
 	    welcome.setHorizontalAlignment(SwingConstants.CENTER);
 	    add(welcome);
 
-	    JPanel actionPanel = new JPanel(null); // Use null for absolute positioning within the panel
+	    JPanel actionPanel = new JPanel(null);
 	    actionPanel.setBounds(0, 680, 1400, 120);
 	    actionPanel.setBackground(new Color(45, 45, 45));
 
-	    // Manually adding and setting bounds for each button
+	    // buttons
 	    add = new JButton("Add");
 	    add.setBounds(310, 35, 150, 40);
 	    add.addActionListener(al);
-	    add.setBackground(Color.DARK_GRAY);  // Set the background to blue
-        add.setForeground(Color.WHITE);  // Set the text color to white
+	    add.setBackground(Color.DARK_GRAY);  
+        add.setForeground(Color.WHITE);  
 	    actionPanel.add(add);
 
 	    edit = new JButton("Edit");
 	    edit.setBounds(470, 35, 150, 40);
 	    edit.addActionListener(al);
-	    edit.setBackground(Color.DARK_GRAY);  // Set the background to blue
-        edit.setForeground(Color.WHITE);  // Set the text color to white
+	    edit.setBackground(Color.DARK_GRAY); 
+        edit.setForeground(Color.WHITE);  
 	    actionPanel.add(edit);
 
 	    delete = new JButton("Delete");
 	    delete.setBounds(630, 35, 150, 40);
 	    delete.addActionListener(al);
-	    delete.setBackground(Color.DARK_GRAY);  // Set the background to blue
-        delete.setForeground(Color.WHITE);  // Set the text color to white
+	    delete.setBackground(Color.DARK_GRAY);  
+        delete.setForeground(Color.WHITE);  
 	    actionPanel.add(delete);
 
 	    refresh = new JButton("Refresh");
 	    refresh.setBounds(790, 35, 150, 40);
 	    refresh.addActionListener(al);
-	    refresh.setBackground(Color.DARK_GRAY);  // Set the background to blue
-        refresh.setForeground(Color.WHITE);  // Set the text color to white
+	    refresh.setBackground(Color.DARK_GRAY);  
+        refresh.setForeground(Color.WHITE);  
 	    actionPanel.add(refresh);
 
 	    exit = new JButton("Exit");
 	    exit.setBounds(950, 35, 150, 40);
 	    exit.addActionListener(al);
-	    exit.setBackground(Color.DARK_GRAY);  // Set the background to blue
-        exit.setForeground(Color.WHITE);  // Set the text color to white
+	    exit.setBackground(Color.DARK_GRAY);  
+        exit.setForeground(Color.WHITE); 
 	    actionPanel.add(exit);
 	    
-	    add(actionPanel); // Add the panel containing buttons to the JFrame
+	    add(actionPanel); 
 
-	    setVisible(true); // Make the JFrame visible
+	    setVisible(true); 
 	}
 
 

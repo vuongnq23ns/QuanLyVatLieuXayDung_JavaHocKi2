@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.text.SimpleDateFormat;
 
@@ -53,6 +54,7 @@ public class EditView extends JFrame {
 	}
 	public void init() {
 		//generate
+		this.setBackground(new Color(45,45,45));
 		this.setSize(900, 580);
 		this.setLocationRelativeTo(null);
 		this.setTitle("Edit");
@@ -71,16 +73,16 @@ public class EditView extends JFrame {
 		
 		//label                                 
 		this.setLayout(null);
-		update.setBounds(620, 450, 160, 50);	update.setFont(new Font ("Consolas", Font.BOLD, 18));;
-		welcome.setBounds(320, 5, 300, 50); 	welcome.setFont(new Font ("Consolas", Font.BOLD, 27));
-		tenVatLieu.setBounds(50, 70, 200, 50);		idVatLieu.setFont(new Font ("Consolas", Font.BOLD, 18));
-												tenVatLieu.setFont(new Font ("Consolas", Font.BOLD, 18));
+		update.setBounds(620, 450, 160, 50);	update.setFont(new Font ("Helvetica", Font.BOLD, 18));;
+		welcome.setBounds(320, 5, 300, 50); 	welcome.setFont(new Font ("Helvetica", Font.BOLD, 27));
+		tenVatLieu.setBounds(50, 70, 200, 50);		idVatLieu.setFont(new Font ("Helvetica", Font.BOLD, 18));
+												tenVatLieu.setFont(new Font ("Helvetica", Font.BOLD, 18));
 		idVatLieu.setBounds(50, 170, 200, 50);	
-		giaBan.setBounds(50, 220, 200, 50);		donViTinh.setFont(new Font ("Consolas", Font.BOLD, 18));
-		donViTinh.setBounds(450, 220, 200, 50);		giaBan.setFont(new Font ("Consolas", Font.BOLD, 18));	
-		giaMua.setBounds(50, 370, 200, 50);		giaMua.setFont(new Font ("Consolas", Font.BOLD, 18));
-		tonKho.setBounds(450, 370, 200, 50);	tonKho.setFont(new Font ("Consolas", Font.BOLD, 18));
-		viTriTrongKho.setBounds(50, 420, 200, 50);	viTriTrongKho.setFont(new Font ("Consolas", Font.BOLD, 18));
+		giaBan.setBounds(50, 220, 200, 50);		donViTinh.setFont(new Font ("Helvetica", Font.BOLD, 18));
+		donViTinh.setBounds(450, 220, 200, 50);		giaBan.setFont(new Font ("Helvetica", Font.BOLD, 18));	
+		giaMua.setBounds(50, 370, 200, 50);		giaMua.setFont(new Font ("Helvetica", Font.BOLD, 18));
+		tonKho.setBounds(450, 370, 200, 50);	tonKho.setFont(new Font ("Helvetica", Font.BOLD, 18));
+		viTriTrongKho.setBounds(50, 420, 200, 50);	viTriTrongKho.setFont(new Font ("Helvetica", Font.BOLD, 18));
 		
 		//textfield
 		tenVatLieuB.setBounds(200, 73, 200, 40);		donViTinhB.setBounds(600, 223, 200, 40);
